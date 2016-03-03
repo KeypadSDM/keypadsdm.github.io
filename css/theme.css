@@ -1,0 +1,74 @@
+
+
+.theme-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+/*
+@media (max-width: 419px) {
+  .graphplot{
+  
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 420px) {
+  .graphplot{
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 600px) {
+  .graphplot{
+    width: 240px;
+    height: 220px;
+  }
+}
+*/
+@media (max-width: 767px) {
+  .graphplot{
+    width: 340px;
+    height: 300px;
+  }
+  .horgraphplot{
+    width: 700px;
+    height: 5000px;
+  }
+}
+
+@media (min-width: 768px) {
+  .graphplot{
+    width: 340px;
+    height: 300px;
+  }
+  body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .horgraphplot{
+    width: 760px;
+    height: 5000px;
+  }
+}
+
+@media (min-width: 992px) {
+  .graphplot{
+    width: 450px;
+    height: 355px;
+  }
+  .horgraphplot{
+    width: 990px;
+    height: 5000px;
+  }
+}
+
+  padding-top: 7px;
+  margin-top: 0;

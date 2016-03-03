@@ -1,0 +1,33 @@
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- First Element - geekLections -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.geeklections.com.au/">geekLections | Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">gL<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="{{ site.baseurl }}/index.html">Blog / News</a></li>
+                {% for my_page in site.pages %}
+                  {% if my_page.title %}
+                    <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+                  {% endif %}
+                {% endfor %}
+                <li><a href="http://www.twitter.com/geeklections" target="_blank">Contact</a></li>
+             </ul>
+            </li> 
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+<div class="container theme-showcase">
+<img src="{{ site.baseurl }}/assets/img/GeeklectionsBanner3.png" style="background-color:#222;max-width:100%;margin-right: auto;margin-left: auto;" />
+</div>
