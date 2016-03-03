@@ -42,6 +42,11 @@
     width: 700px;
     height: 5000px;
   }
+  /* Should fix the navbar issues */
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    position: relative;
+   }
+  
 }
 
 @media (min-width: 768px) {
