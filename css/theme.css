@@ -62,6 +62,8 @@
     width: 760px;
     height: 5000px;
   }
+  /* Fixes the width of the container, old css had this at 800, but now 720??? */
+  .wrapper { max-width: 768px; padding-right: 0px; padding-left: 0px; }
 }
 
 @media (min-width: 992px) {
@@ -73,7 +75,10 @@
     width: 990px;
     height: 5000px;
   }
+  /* Fixes the width of the container, old css had this at 800, but now 720??? */
+  .wrapper { max-width: 840px; padding-right: 0px; padding-left: 0px; }
 }
 
   padding-top: 7px;
   margin-top: 0;
+ 
