@@ -10,7 +10,12 @@
 
     <div class="page-content">
       <div class="wrapper">
-        {{ content }}  
+          <div class="col-sm-9 blog-main"> 
+        {{ content }}
+          </div>      
+          
+          {% include post_sidebar.html %}
+
       </div>
     </div>
 

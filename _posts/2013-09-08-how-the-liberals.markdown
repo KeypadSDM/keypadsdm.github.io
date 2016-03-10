@@ -3,6 +3,7 @@ layout: post
 title:  "How the Liberals got everything they wanted in NSW, but not what they asked for"
 date:   2013-09-08 16:44:00 +1100
 categories: federal 2013 senate nsw
+tags: Federal 2013 Senate NSW
 ---
 Tony Abbott asked the population of Australia to “vote for one of the major parties”. It’s a strong statement. He doesn’t want to be dealing with the minor parties to pass legislation through the senate. But, little did he know, a disregard for this message by near 6%* of the population of NSW has advantaged him greatly in his quest for passage of legislation through the Senate.
 
