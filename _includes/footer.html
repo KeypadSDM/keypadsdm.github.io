@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <!--<h2 class="footer-heading">{{ site.title }}</h2>-->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
@@ -25,11 +25,21 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+            
+          {% if site.googleplus_username %}
+          <li>
+            {% include icon-googleplus.html username=site.googleplus_username %}
+          </li>
+          {% endif %}
+            
         </ul>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+          <ul class="contact-list">
+        <li>{{ site.description }}</li>
+          <li>Powered by Jekyll</li>
+              </ul>
       </div>
     </div>
 

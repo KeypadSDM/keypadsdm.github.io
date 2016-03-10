@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.yolo.pw" # the base hostname & protocol for your site
 twitter_username: geeklections
 github_username:  keypadsdm
+googleplus_username: 111890045269437424074
 
 # Build settings
 markdown: kramdown

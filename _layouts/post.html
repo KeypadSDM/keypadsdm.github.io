@@ -4,15 +4,18 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     
   <header class="page-header">
-    <h1 style="color:#bbbbbb;">{{ page.title }}</h1>
+      <div class="alert alert-info {% for row in site.data.blog-page-colours %}{% if page.tags[0] == {{row.postType}} %}alert{{row.panelLabel}}{% endif %}{% endfor %}" role="alert">
+          <h2>{{ page.title }}</h2>
+          
+          <span class="post-date yolo-date">{{ page.date | date: '%B %-d, %Y | %H:%M' }} {% for tag in page.tags %} | {{tag}} {% endfor %}</span>
+          </div>
+      
   </header>
     
   <div class="col-sm-9 blog-main">  
-    <div class="panel panel-danger">
+    <div class="panel panel-default">
         
-      <div class="panel-heading">
-        <span class="post-date yolo-date">{{ page.date | date: '%B %-d, %Y | %H:%M' }} {% for tag in page.tags %} | {{tag}} {% endfor %}</span>
-      </div>
+
         
       <div class="panel-body">
         {{ content }}
