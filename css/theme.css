@@ -77,8 +77,25 @@
   }
   /* Fixes the width of the container, old css had this at 800, but now 720??? */
   .wrapper { max-width: 900px; padding-right: 0px; padding-left: 0px; }
+    
+    
 }
 
-  padding-top: 7px;
-  margin-top: 0;
- 
+@media (min-width: 1px) {
+    
+    .yolo-date {
+    font-size: 12px;
+    }
+}
+    
+    
+
+
+
+padding-top: 7px;
+margin-top: 0;
+
+
+
+
+  

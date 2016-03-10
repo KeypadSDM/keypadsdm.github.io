@@ -11,7 +11,7 @@ layout: default
     <div class="panel panel-danger">
         
       <div class="panel-heading">
-        <span class="post-date">{{ page.date | date: '%H:%M | %B %d, %Y' }}</span>
+        <span class="post-date yolo-date">{{ page.date | date: '%B %-d, %Y | %H:%M' }} {% for tag in page.tags %} | {{tag}} {% endfor %}</span>
       </div>
         
       <div class="panel-body">

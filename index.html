@@ -7,20 +7,34 @@ layout: index-default
   <h1 style="color:#bbbbbb;">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    
+{% for post in site.posts %}
       
-      <div class="panel {% if post.tags[0] == "Federal" %}panel-danger{% elsif post.tags[0] == "State" %}panel-success{% else %}panel-info{% endif %}">
-  <div class="panel-heading">
-    <h3 class="panel-title ">{{ post.date | date: "%b %-d, %Y" }} {% for tag in post.tags %} | {{tag}} {% endfor %}</h3>
-  </div>
-  <div class="panel-body">
+  <div class="panel {% if post.tags[0] == "Federal" %}panel-danger{% elsif post.tags[0] == "State" %}panel-success{% else %}panel-info{% endif %}">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+    <div class="panel-heading">
+      
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" {% if post.tags[0] == "Federal" %}style="color:rgb(169, 60, 60)"{% elsif post.tags[0] == "State" %}style="color:rgb(70, 136, 71)"{% endif %}>{{ post.title }}</a>
         </h2>
+        <h3 class="panel-title yolo-date">{{ post.date | date: '%B %-d, %Y | %H:%M' }} {% for tag in post.tags %} | {{tag}} {% endfor %}</h3>
+        
+    </div>
+      </a>
+    <div class="panel-body">
+      <p>
+        {{ post.excerpt }}
+      </p>
+      <div class="yolo-date">
+          <a href="{{ post.url | prepend: site.baseurl }}" {% if post.tags[0] == "Federal" %}style="color:rgb(169, 60, 60)"{% elsif post.tags[0] == "State" %}style="color:rgb(70, 136, 71)"{% endif %}>
+              Continue Reading»</a>
+        </div>
+    </div>
   </div>
-</div>
+
       
-    {% endfor %}
+{% endfor %}
+      
   </ul>
 
   <p class="rss-subscribe" style="color:#bbbbbb;">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
