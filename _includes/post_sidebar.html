@@ -1,27 +1,35 @@
 
         <div class="col-sm-3 blog-sidebar">
         <!--<div class="col-sm-3 col-sm-offset-1 blog-sidebar">-->
-          <div class="sidebar-module">
+          
               <div class="panel panel-default">
                 <div class="panel-body">
+                    <div class="sidebar-module">
        <!--Check if this is the main page, no need for back-link there-->      
               {% if page.title2 == "geekLectionsIndex" %}{% else %}
             <h4><a href="{{ site.baseurl }}/index.html">Blog / News</a></h4>
               {% endif %}
               
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-          
+            <h4>Psephology Blogs</h4>
+            <ol class="list-unstyled" style="font-size:12px">
+              {% for blog in site.data.psephology-links %}
+                <li><a href="{{blog.blogURL}}">{{blog.blogName}}</a></li>
+              {% endfor %}
+            </ol>          
             <h4>Archives</h4>
             <ol class="list-unstyled" style="font-size:12px">
               <li><a href="#">Coming Soon</a></li>
             </ol>
-          
-          <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">google+</a></li>
+
+          <h4>Find Me Elsewhere</h4>
+            <ol class="list-unstyled" style="font-size:12px">
+                
+              <li><a href="https://www.github.com/{{site.github_username}}">GitHub</a></li>
+              <li><a href="https://www.twitter.com/{{site.twitter_username}}">Twitter</a></li>
+              <li><a href="https://plus.google.com/{{site.googleplus_username}}">google+</a></li>
             </ol>
           </div>
-        </div></div></div><!-- /.blog-sidebar -->
+        </div>
+        </div>
+        </div><!-- /.blog-sidebar -->
       <!--end additional blog stylings-->  
