@@ -25,3 +25,5 @@ This is a blog dedicated to maths, statistics and elections.
 Interested in politics, but far more interested in the numbers surrounding them. Developing a Bayesian model, using historical election and current polling data, using this to predict how individual areas and electorates will vote. I hope to predict the outcome of elections as early as possible on election night.
 
 If you want to get in contact with me, catch me on [Twitter](https://twitter.com/geeklections)
+
+[Thomas Clement](https://twitter.com/keypadsdm)
